@@ -184,3 +184,7 @@ docs/
 # translation temp files
 po/*~
 
+/data/Vehicles0514.csv
+/data/Road-Accident-Safety-Data-Guide.xls
+/data/Casualties0514.csv
+/data/Accidents0514.csv
