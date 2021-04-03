@@ -6,7 +6,7 @@ Columns are mapped with their text strings from a lookup table.
 
 Ideas for our project (Inspired from the dataset author). Plots, Heat maps, Graphs for the following:
 
-     How the weather impact the number or severity of an accident?
+     How does the weather impact the number or severity of an accident?
      Does driver age has an effect on the number of accident?
      What is the relation between hour, day, week, month with number of fatal accident?
      Are certain car models safer than others?
