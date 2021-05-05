@@ -6,12 +6,13 @@ library(lubridate)
 
 
 df$Date_aux<- as.Date(df$Date, "%d/%m/%Y")
+df$month_year <- format(df$Date_aux, "%Y-%m")
 
 
 new_df<-df %>%  
   filter(Casualty_Outcome=="Fatal")%>%
-  group_by(Date_aux) %>%
-  arrange(Date_aux) %>%
+  group_by(month_year) %>%
+  arrange(month_year) %>%
   summarize(total_accidents=n_distinct(Accident_Index))
 
 
