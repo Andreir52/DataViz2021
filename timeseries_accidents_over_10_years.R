@@ -15,9 +15,9 @@ new_df<-df %>%
   summarize(total_accidents=n_distinct(Accident_Index))
 
 
-startDate<-min(df$Date_aux)
-endDate<-max(df$Date_aux)
-ts<- msts(new_df$total_accidents,seasonal.periods=365.25,start=decimal_date(as.Date(startDate, "%d/%m/%Y")))
+startDate<-min(df$Date)
+endDate<-max(df$Date)
+ts<- msts(new_df$total_accidents,seasonal.periods=12,start=decimal_date(as.Date(startDate, "%d/%m/%Y")))
 plot(ts, main="Monthly Fatal Accidents", xlab="Year", ylab="Accidents")
 
 
